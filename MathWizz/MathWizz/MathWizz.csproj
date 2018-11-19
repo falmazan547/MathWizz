@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -201,6 +202,10 @@
     <Content Include="App_Data\MathWizzDB.mdf" />
     <Content Include="App_Data\MathWizzDB_log.ldf">
       <DependentUpon>MathWizzDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\ProjectDatabase.mdf" />
+    <Content Include="App_Data\ProjectDatabase_log.ldf">
+      <DependentUpon>ProjectDatabase.mdf</DependentUpon>
     </Content>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />

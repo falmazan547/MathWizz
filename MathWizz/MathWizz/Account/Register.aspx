@@ -36,6 +36,35 @@
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
             </div>
         </div>
+
+        <div class="form-group">
+            <asp:Label runat="server" AssociatedControlID="AccountType" CssClass="col-md-2 control-label">Account Type</asp:Label>
+            <div class="col-md-10">
+                <asp:DropDownList runat="server" ID="AccountType" TextMode="Text" CssClass="form-control" />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="AccountType"
+                    CssClass="text-danger" Display="Dynamic" ErrorMessage="Type of account is required." />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <asp:Label runat="server" AssociatedControlID="FirstName" CssClass="col-md-2 control-label">First Name</asp:Label>
+            <div class="col-md-10">
+                <asp:TextBox runat="server" ID="FirstName" CssClass="form-control" />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="FirstName"
+                    CssClass="text-danger" Display="Dynamic" ErrorMessage="First name is required." />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <asp:Label runat="server" AssociatedControlID="LastName" CssClass="col-md-2 control-label">Last Name</asp:Label>
+            <div class="col-md-10">
+                <asp:TextBox runat="server" ID="LastName" CssClass="form-control" />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="LastName"
+                    CssClass="text-danger" Display="Dynamic" ErrorMessage="Last name is required." />
+            </div>
+        </div>
+
+
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
